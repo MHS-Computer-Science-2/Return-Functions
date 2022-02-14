@@ -9,13 +9,13 @@ using namespace std;
 //** Functions start here **
 
 void perimeter(int length, int width) {
-	cout << "Perimeter: " << length * width << endl;
+	cout << "Perimeter: " << 2 * length + 2 * width << endl;
 }
 
 // int is the RETURN TYPE. This function
 // must return an int answer
 int getPerimeter(int length, int width) {
-	return length * width;
+	return 2 * length + 2 * width;
 }
 // A return statement specifies what value should be 
 // returned. It must match the return type.
