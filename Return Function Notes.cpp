@@ -44,7 +44,7 @@ int main()
 	//int perimeter3 = perimeter(4, 5);
 
 	// TRY IT: Write a function that returns the average of 2 numbers
-	
+	cout << average(3, 4.5) << endl;
 	//Should display 3.75
 
 
