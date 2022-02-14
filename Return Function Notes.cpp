@@ -9,7 +9,7 @@ using namespace std;
 //** Functions start here **
 
 void perimeter(int length, int width) {
-	cout << "Perimeter: " << length * width << endl;
+	cout << "Perimeter: " << 2 * length + 2 * width << endl;
 }
 
 // int is the RETURN TYPE. This function
