@@ -25,7 +25,7 @@ void perimeter(int length, int width) {
 //** Functions end here **
 
 
-int main()
+void main()
 {
 	// Example 1
 	// Rectangle 1 has length 3 and width 7
