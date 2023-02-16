@@ -1,6 +1,7 @@
 // Return Functions
 // I CAN explain the purpose of functions in C++
 // I CAN write and call return functions
+// I CAN explain and use function parameters
 
 #include <iostream>
 using namespace std;
