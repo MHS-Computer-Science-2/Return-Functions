@@ -1,7 +1,8 @@
 // Return Functions
 // I CAN explain the purpose of functions in C++
-// I CAN write and call return functions
-// I CAN explain and use function parameters
+// I CAN write and call RETURN functions
+// I CAN explain and use function PARAMTERS
+// I CAN identify the function IDENTIFIER and RETURN TYPE
 
 #include <iostream>
 using namespace std;
