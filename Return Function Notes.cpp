@@ -1,53 +1,50 @@
 // Return Functions
-
+// I CAN explain the purpose of functions in C++
 // I CAN write and call return functions
-
 
 #include <iostream>
 using namespace std;
 
-//** Functions start here **
-
-void perimeter(int length, int width) {
-	cout << "Perimeter: " << 2 * length + 2 * width << endl;
-}
-
-// int is the RETURN TYPE. This function
-// must return an int answer
-
-
-// A return statement specifies what value should be 
-// returned. It must match the return type.
-// You can only return ONE VALUE
+//Functions should be written ABOVE main()
 
 
 
-//** Functions end here **
-
-
-void main()
+int main()
 {
-	// Example 1
-	// Rectangle 1 has length 3 and width 7
-	// Rectangle 2 has length 15 and width 9
-	// Using the perimeter function, display the sum of the perimeters
+	//EXAMPLE 1
+	//Consider a function from math class: f(x) = 6x - 9
+	// What is f(4)?
+	// What is f(-5)?
+	// What is f(0)?
+
+	//Let's teach C++ to do this function for us
+
+
+
+	//f is the ______________ (name) of the function 
+	//You can use any name that you want
+
+	//4, -5, and 0 are ______________. These are the inputs to the function.
+
+
+	//EXAMPLE 2
+	//Let's write a function that computes the perimeter of a rectangle
+	//with length 5 and width 12
+
 	
 
-	// Non-void functions give us back an answer (return value)
-	// We can do whatever we want with the answer - usually 
-	// save it in a variable or print it
-
-	// void functions DO NOT return an answer so saving
-	// them in a variable or printing them does not work
-
-	//int perimeter3 = perimeter(4, 5);
-	//int perimeter3 = perimeter(4, 5);
-
+	//EXAMPLE 3
 	// TRY IT: Write a function that returns the average of 2 numbers
-	//cout << average(3, 4.5) << endl;
-	//Should display 3.75
+	//double a = average(3, 6);
+	//cout << "The average is: " << a << endl;
 
 
+	//WHY FUNCTIONS?
+	//Functions serve two main purposes:
+	// 1. _____________. We can write the code once and call it over and over.
+	// 2. _____________. We can break one large task into smaller subtasks.
+
+	
 
 	system("pause");
 }
