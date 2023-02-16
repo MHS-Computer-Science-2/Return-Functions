@@ -1,57 +1,71 @@
 // Return Functions
-
+// I CAN explain the purpose of functions in C++
 // I CAN write and call return functions
-
 
 #include <iostream>
 using namespace std;
 
-//** Functions start here **
+//Functions should be written above main()
 
-void perimeter(int length, int width) {
-	cout << "Perimeter: " << 2 * length + 2 * width << endl;
+int f(int x) {
+	return 6 * x - 9;
 }
 
-// int is the RETURN TYPE. This function
-// must return an int answer
-int getPerimeter(int length, int width) {
-	return 2 * length + 2 * width;
-}
-// A return statement specifies what value should be 
-// returned. It must match the return type.
-// You can only return ONE VALUE
-
-double average(double a, double b) {
-	return (a + b) / 2;
+int perimeter(int length, int width) {
+	int result1 = 2 * length;
+	int result2 = 2 * width;
+	return result1 + result2;
+	//The RETURN STATEMENT specifies the OUTPUT of the function
+	//A function can have multiple calculations, but only 1 value
+	//can be returned.The function stops at the return statement.
 }
 
-//** Functions end here **
+double average(int a, int b) {
+	return (a + b) / 2.0;
+
+	//The word DOUBLE in this function is the RETURN TYPE
+	//It specifies what type of information (int, double, string)
+	//the function outputs (returns)
+}
 
 
-void main()
+int main()
 {
-	// Example 1
-	// Rectangle 1 has length 3 and width 7
-	// Rectangle 2 has length 15 and width 9
-	// Using the perimeter function, display the sum of the perimeters
-	int perimeter1 = getPerimeter(3, 7);
-	int perimeter2 = getPerimeter(15, 9);
-	cout << "Sum of perimeters: " << perimeter1 + perimeter2 << endl;
+	//EXAMPLE 1
+	//Consider a function from math class: f(x) = 6x - 9
+	// What is f(4)?
+	// What is f(-5)?
+	// What is f(0)?
 
-	// Non-void functions give us back an answer (return value)
-	// We can do whatever we want with the answer - usually 
-	// save it in a variable or print it
+	//Let's teach C++ to do this function for us
+	cout << f(4) << endl;
+	cout << f(-5) << endl;
+	cout << f(0) << endl;
 
-	// void functions DO NOT return an answer so saving
-	// them in a variable or printing them does not work
+	//f is the IDENTIFIER (name) of the function 
+	//You can use any name that you want
 
-	//int perimeter3 = perimeter(4, 5);
-	//int perimeter3 = perimeter(4, 5);
+	//4, -5, and 0 are PARAMETERS. These are the inputs to the function.
 
+
+	//EXAMPLE 2
+	//Let's write a function that computes the perimeter of a rectangle
+	//with length 5 and width 12
+	cout << "Perimeter: " << perimeter(5, 12) << endl;
+	
+
+	//EXAMPLE 3
 	// TRY IT: Write a function that returns the average of 2 numbers
-	cout << average(3, 4.5) << endl; //Should display 3.75
+	double a = average(3, 6);
+	cout << "The average is: " << a << endl;
 
 
+	//WHY FUNCTIONS?
+	//Functions serve two main purposes:
+	// 1. Code Reuse. We can write the code once and call it over and over
+	// 2. Organization. We can break one large task into smaller subtasks.
+
+	
 
 	system("pause");
 }
